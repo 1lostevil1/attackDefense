@@ -1,6 +1,6 @@
 package org.example.controller;
 
-import org.example.service.AttackService;
+import org.example.service.AttackGrpcService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,7 +10,7 @@ import java.util.Random;
 public class AttackController {
 
     @Autowired
-    private AttackService attackService;
+    private AttackGrpcService attackService;
 
     @PostMapping("/start")
     public String startAttack() {

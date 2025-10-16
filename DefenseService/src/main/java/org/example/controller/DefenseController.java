@@ -26,10 +26,6 @@ public class DefenseController {
         return "All counters and bans reset";
     }
 
-    @GetMapping("/health")
-    public String health() {
-        return "Defense service is running";
-    }
 }
 
 
